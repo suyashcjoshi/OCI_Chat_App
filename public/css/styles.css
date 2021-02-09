@@ -1,0 +1,112 @@
+html, body { 
+  height: 100%;
+  width: 100%;
+  margin: 0; 
+  padding: 0; 
+  box-sizing: border-box; 
+  font: 13px Helvetica, Arial; 
+  background: linear-gradient(to left, #23a6d5, #4a148c, #ff0066, #4a148c, #23a6d5);
+  background-size: 400% 400%;
+  animation: gradientTranisition 500s linear infinite;
+}
+
+@keyframes gradientTranisition {
+  0% {
+    background-position: 0% 25%;
+  }
+  25% {
+    background-position: 50% 50%;
+  }
+  75% {
+    background-position: 100% 75%;
+  }
+  100% {
+    background-position: 150% 100%;
+  }
+}
+
+#page-header {
+  text-align: center;
+  color: #FFFFFF;
+}
+#form { 
+  background: #FFFFFF; 
+  padding: 3px; 
+  position: fixed; 
+  bottom: 0; 
+  width: 100%; 
+}
+.input { 
+  border: 0; 
+  padding: 10px; 
+  width: 90%; 
+  margin-right: 0.5%; 
+}
+.button { 
+  width: 9%; 
+  background: rgb(130, 224, 255); 
+  border: none; 
+  padding: 10px; 
+}
+#chat-header {
+  text-align: center;
+}
+#message-box { 
+  color: #FFFFFF;
+  border-left: 1px solid #000000;
+  list-style-type: none; 
+  float: right;
+  padding: 10px; 
+  width: 30%;
+  height: 450px;
+  overflow: auto;
+}
+#message-box li { 
+  padding: 5px; 
+}
+#message-box small {
+  display: block;
+}
+#video-player {
+  width: 60%;
+  margin: 20px;
+  max-width: 1080px;
+  position: relative;
+  box-shadow: 0 6px 30px rgba(0, 0, 0, 0.3);
+  background: black;
+}
+#nav-bar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #FFFFFF;
+  border-bottom: 1px solid #000000;
+}
+#nav-bar li { 
+  float: right;
+}
+#nav-bar li a {
+  display: block;
+  color: #000000;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 18px;
+}
+/* Change the link color to #111 (black) on hover */
+#nav-bar li a:hover {
+  color: #1f29c0;
+}
+/* Minimal style changes for about.html and tutorial.html pages */
+.about-page, 
+.about-page body,
+.tutorial-page, 
+.tutorial-page body {
+  background: none;
+}
+.tutorial-page #content {
+  margin: 10px 100px;
+  padding: 10px;
+  background-color: #FFFFFF;
+}

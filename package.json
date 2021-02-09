@@ -1,0 +1,29 @@
+{
+  "name": "chatapp",
+  "version": "1.0.0",
+  "description": "Websocket powered interactive chat app",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "nodemon src/server.js",
+    "prod": "pm2 start src/server.js",
+    "stop": "pm2 kill"
+  },
+  "keywords": [
+    "node.js",
+    "socket.io",
+    "realtime",
+    "chat",
+    "webapp"
+  ],
+  "author": "Suyash Joshi",
+  "license": "MIT",
+  "dependencies": {
+    "basic-auth": "^2.0.1",
+    "express": "^4.17.1",
+    "human-names": "^1.0.11",
+    "pm2": "^4.5.0",
+    "socket.io": "^2.3.0"
+  },
+  "devDependencies": {}
+}
